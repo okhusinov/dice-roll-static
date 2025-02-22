@@ -4,14 +4,24 @@
     <title>Dice Roll Static</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+ 
+     <style>
+      .navbar {
+        display: flex;
+      	justify-content: space-around;
+      }
+    </style>
+ 
   </head>
   <body>
 
-    <a href="/dice/2/6">2d6</a>
-    <a href="/dice/2/10">2d10</a>
-    <a href="/dice/1/20">1d20</a>
-    <a href="/dice/5/4">5d4</a>
-
+    <div class="navbar">
+      <a href="/">Home</a>
+      <a href="/dice/2/6">2d6</a>
+      <a href="/dice/2/10">2d10</a>
+      <a href="/dice/1/20">1d20</a>
+      <a href="/dice/5/4">5d4</a>
+    </div>
     <%= yield %>
 
   </body>
