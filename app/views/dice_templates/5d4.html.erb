@@ -2,12 +2,11 @@
 
 <ul>
 
-  <li>
-    <%= rand(0..4) %>
-  </li>
+<% @dice_rolls.each do |a_roll| %>
 
   <li>
-    <%= rand(0..4) %>
+    <%= a_roll %>
   </li>
-  
+ 
+ <% end %>
 </ul>
